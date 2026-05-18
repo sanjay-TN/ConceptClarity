@@ -1,5 +1,7 @@
 # ConceptClarity
 
+Deployed Link: https://conceptclarity-z2q6.onrender.com
+
 ConceptClarity is a full-stack offline AI-style education platform. Learners type a question, press Send, and receive a structured conversational explanation generated locally by backend NLP-style rules, concept classification, progressive memory, templates, and an internal knowledge base.
 
 No external AI service, paid API, internet access, or secret credential is required for explanation generation.
