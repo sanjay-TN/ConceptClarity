@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | ConceptClarity</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-protected="true" data-page="history">
+    <div class="app-shell">
+        <header class="topbar">
+            <a class="brand" href="dashboard.html">
+                <img src="assets/brand-mark.svg" alt="ConceptClarity logo">
+                <span>ConceptClarity</span>
+            </a>
+            <nav class="nav-actions" aria-label="History actions">
+                <span class="user-pill">Hi, <strong data-user-name>Learner</strong></span>
+                <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" title="Toggle theme">Light</button>
+            </nav>
+        </header>
+
+        <main class="workspace">
+            <aside class="sidebar">
+                <nav class="sidebar-nav" aria-label="Workspace navigation">
+                    <a href="dashboard.html"><span>Dashboard</span></a>
+                    <a class="active" href="history.html"><span>History</span></a>
+                    <button type="button" data-logout><span>Logout</span></button>
+                </nav>
+            </aside>
+
+            <section class="history-page">
+                <div class="page-head">
+                    <div>
+                        <p class="eyebrow">Library</p>
+                        <h1>Saved explanations</h1>
+                    </div>
+                    <div class="history-tools">
+                        <input class="search-input" type="search" data-history-search placeholder="Search concepts">
+                        <label class="toggle-row">
+                            <input type="checkbox" data-favorite-filter>
+                            <span>Favorites</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="history-list" data-history-list>
+                    <article class="history-card skeleton"></article>
+                    <article class="history-card skeleton"></article>
+                </div>
+
+                <div class="pagination" data-pagination></div>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

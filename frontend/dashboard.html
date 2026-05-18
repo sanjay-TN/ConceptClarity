@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | ConceptClarity</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-protected="true" data-page="dashboard">
+    <div class="app-shell chat-shell">
+        <header class="topbar chat-topbar">
+            <a class="brand" href="dashboard.html">
+                <img src="assets/brand-mark.svg" alt="ConceptClarity logo">
+                <span>ConceptClarity</span>
+            </a>
+            <nav class="nav-actions" aria-label="Dashboard actions">
+                <span class="user-pill">Hi, <strong data-user-name>Learner</strong></span>
+                <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" title="Toggle theme">Light</button>
+            </nav>
+        </header>
+
+        <main class="workspace chat-workspace">
+            <aside class="sidebar chat-sidebar">
+                <nav class="sidebar-nav" aria-label="Workspace navigation">
+                    <a class="active" href="dashboard.html"><span>Chat</span></a>
+                    <a href="history.html"><span>History</span></a>
+                    <button type="button" data-logout><span>Logout</span></button>
+                </nav>
+
+                <section class="recent-chat-panel">
+                    <p class="eyebrow">Recent chats</p>
+                    <div class="mini-list" data-recent-searches>
+                        <button class="mini-item" type="button">No chats yet</button>
+                    </div>
+                </section>
+            </aside>
+
+            <section class="chat-page">
+                <div class="chat-header">
+                    <div>
+                        <p class="eyebrow">Offline AI Tutor</p>
+                        <h1>Ask anything. I will choose the depth.</h1>
+                    </div>
+                    <div class="quick-stats chat-stats" data-progress-cards>
+                        <article class="metric-card skeleton"></article>
+                        <article class="metric-card skeleton"></article>
+                        <article class="metric-card skeleton"></article>
+                    </div>
+                </div>
+
+                <section class="chat-panel" aria-label="AI chat">
+                    <div class="chat-messages" data-chat-messages aria-live="polite">
+                        <article class="chat-message assistant-message">
+                            <div class="avatar">CC</div>
+                            <div class="message-card">
+                                <div class="message-meta">ConceptClarity</div>
+                                <div class="message-content">
+                                    <p>Ask me a topic or question. I will automatically decide whether you need a beginner, intermediate, advanced, or expert explanation based on your previous chats.</p>
+                                    <p>Every answer includes definition, detailed explanation, step-by-step understanding, analogy, example, and summary.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <form class="chat-composer" data-chat-form>
+                        <textarea data-chat-input name="message" rows="1" minlength="2" maxlength="1000" placeholder="Message ConceptClarity..." aria-label="Message ConceptClarity"></textarea>
+                        <button class="primary-btn send-btn" type="submit" data-send-button>Send</button>
+                    </form>
+                </section>
+
+                <section class="chat-actions-panel">
+                    <div class="response-actions">
+                        <button class="ghost-btn" type="button" data-copy>Copy last response</button>
+                        <button class="ghost-btn" type="button" data-bookmark>Save response</button>
+                        <button class="ghost-btn" type="button" data-export>PDF</button>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
